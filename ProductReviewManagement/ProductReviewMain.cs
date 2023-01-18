@@ -58,5 +58,10 @@ namespace ProductReviewManagement
             var result = this.productReviews.Average(x => x.Rating);
             Console.WriteLine(result);
         }
+        public void RetrieveUsingMessage(List<ProductReview> list)
+        {
+            var result = this.productReviews.Where(x => x.Review.Contains("nice"));
+            Display(result.ToList());
+        }
     }
 }
