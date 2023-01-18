@@ -55,16 +55,17 @@ namespace ProductReviewManagement
         }
         public void AverageRating()
         {
-<<<<<<< HEAD
             var result = this.productReviews.Average(x => x.Rating);
-=======
-            var result = this.productReviews.Average(x=>x.Rating);
->>>>>>> UC10_AverageRating
             Console.WriteLine(result);
         }
         public void RetrieveUsingMessage(List<ProductReview> list)
         {
             var result = this.productReviews.Where(x => x.Review.Contains("nice"));
+            Display(result.ToList());
+        }
+        public void RetrieveUsingUserId()
+        {
+            var result = this.productReviews.Where(x => x.UserId == 10).OrderBy(x => x.Rating);
             Display(result.ToList());
         }
     }
