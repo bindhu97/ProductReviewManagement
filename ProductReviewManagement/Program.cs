@@ -28,6 +28,7 @@ public class Program
         ProductReviewMain productReview = new ProductReviewMain();
         productReview.AddProductList(productReviews);
         //productReview.RetrieveTopRecords();
-        productReview.RetrieveAllRecords();
+        //productReview.RetrieveAllRecords();
+        productReview.RetrieveAllRecordsGroupBy();
     }
 }

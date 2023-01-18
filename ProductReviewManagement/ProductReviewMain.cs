@@ -31,5 +31,14 @@ namespace ProductReviewManagement
             (x.ProductId == 1 || x.ProductId == 4 || x.ProductId == 9));
             Display(result.ToList());
         }
+        public void RetrieveAllRecordsGroupBy()
+        {
+            var result = this.productReviews.GroupBy(x => x.ProductId);
+            foreach (var data in result)
+            {
+                Console.WriteLine(data.Count());
+                Display(data.ToList());
+            }
+        }
     }
 }
