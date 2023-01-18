@@ -53,5 +53,10 @@ namespace ProductReviewManagement
             var result = this.productReviews.OrderByDescending(x => x.Rating).Skip(5);
             Display(result.ToList());
         }
+        public void AverageRating()
+        {
+            var result = this.productReviews.Average(x=>x.Rating);
+            Console.WriteLine(result);
+        }
     }
 }
