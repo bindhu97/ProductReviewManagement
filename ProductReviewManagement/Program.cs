@@ -10,7 +10,7 @@ public class Program
         {
             new ProductReview() { ProductId = 1, UserId = 1, Rating = 5, Review = "Very Good", IsLike = true },
             new ProductReview() { ProductId = 2, UserId = 1, Rating = 4, Review = "Good", IsLike = true },
-            new ProductReview() { ProductId = 3, UserId = 2, Rating = 3, Review = "Average", IsLike = false },
+            new ProductReview() { ProductId = 3, UserId = 2, Rating = 5, Review = "Very Good", IsLike = false },
             new ProductReview() { ProductId = 4, UserId = 2, Rating = 3, Review = "Average", IsLike = false },
             new ProductReview() { ProductId = 5, UserId = 3, Rating = 4, Review = "Good", IsLike = true },
             new ProductReview() { ProductId = 6, UserId = 4, Rating = 2, Review = "Average", IsLike = false },
@@ -27,5 +27,6 @@ public class Program
         };
         ProductReviewMain productReview = new ProductReviewMain();
         productReview.AddProductList(productReviews);
+        productReview.RetrieveTopRecords();
     }
 }
