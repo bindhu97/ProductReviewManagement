@@ -30,6 +30,7 @@ public class Program
         //productReview.RetrieveTopRecords();
         //productReview.RetrieveAllRecords();
         //productReview.RetrieveAllRecordsGroupBy();
-        productReview.RetrieveAllRecordsFields();
+        //productReview.RetrieveAllRecordsFields();
+        productReview.SkipTopRecords();
     }
 }

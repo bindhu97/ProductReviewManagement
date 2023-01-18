@@ -48,5 +48,10 @@ namespace ProductReviewManagement
                 Console.WriteLine(data.ProductId + " " + data.Rating);
             }
         }
+        public void SkipTopRecords()
+        {
+            var result = this.productReviews.OrderByDescending(x => x.Rating).Skip(5);
+            Display(result.ToList());
+        }
     }
 }
