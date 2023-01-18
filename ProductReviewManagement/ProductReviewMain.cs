@@ -55,7 +55,11 @@ namespace ProductReviewManagement
         }
         public void AverageRating()
         {
+<<<<<<< HEAD
             var result = this.productReviews.Average(x => x.Rating);
+=======
+            var result = this.productReviews.Average(x=>x.Rating);
+>>>>>>> UC10_AverageRating
             Console.WriteLine(result);
         }
     }
