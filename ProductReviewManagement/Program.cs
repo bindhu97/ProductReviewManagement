@@ -31,6 +31,7 @@ public class Program
         //productReview.RetrieveAllRecords();
         //productReview.RetrieveAllRecordsGroupBy();
         //productReview.RetrieveAllRecordsFields();
-        productReview.SkipTopRecords();
+        //productReview.SkipTopRecords();
+        productReview.AverageRating();
     }
 }
