@@ -9,7 +9,7 @@ public class Program
         List<ProductReview> productReviews = new List<ProductReview>()
         {
             new ProductReview() { ProductId = 1, UserId = 1, Rating = 5, Review = "Very Good", IsLike = true },
-            new ProductReview() { ProductId = 1, UserId = 1, Rating = 4, Review = "Good", IsLike = true },
+            new ProductReview() { ProductId = 2, UserId = 1, Rating = 4, Review = "Good", IsLike = true },
             new ProductReview() { ProductId = 3, UserId = 2, Rating = 5, Review = "Very Good", IsLike = false },
             new ProductReview() { ProductId = 4, UserId = 2, Rating = 3, Review = "Average", IsLike = false },
             new ProductReview() { ProductId = 5, UserId = 3, Rating = 4, Review = "Good", IsLike = true },
@@ -29,6 +29,7 @@ public class Program
         productReview.AddProductList(productReviews);
         //productReview.RetrieveTopRecords();
         //productReview.RetrieveAllRecords();
-        productReview.RetrieveAllRecordsGroupBy();
+        //productReview.RetrieveAllRecordsGroupBy();
+        productReview.RetrieveAllRecordsFields();
     }
 }

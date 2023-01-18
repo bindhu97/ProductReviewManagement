@@ -40,5 +40,13 @@ namespace ProductReviewManagement
                 Display(data.ToList());
             }
         }
+        public void RetrieveAllRecordsFields()
+        {
+            var result = this.productReviews.Select(x => new { x.ProductId, x.Rating, });
+            foreach (var data in result)
+            {
+                Console.WriteLine(data.ProductId + " " + data.Rating);
+            }
+        }
     }
 }
